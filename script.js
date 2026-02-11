@@ -13,3 +13,12 @@ const yesButton = document.getElementById('yes');
 yesButton.addEventListener('click', () => {
     document.body.innerHTML = '<h1 style="text-align: center;">Wiedziałem ze powiesz tak! ❤️</h1><img src="./Cute.png" alt="Unknown Image" style="display: block; margin: 0 auto;">';
 });
+
+// make no button move to a random spot on every mouse click
+noButton.addEventListener('click', () => {
+    const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+    noButton.style.position = 'absolute';
+    noButton.style.left = `${x}px`;
+    noButton.style.top = `${y}px`;
+});
