@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 221, 221);
+}
+
+:root{
+    --size: 14rem;
+}
+
+body{
+    background-color: rgb(255, 156, 192);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap : 5rem;
+}
+
+/* heart shape div */
+.heart{
+    width: var(--size);
+    aspect-ratio: 1;
+    background-color: rgb(255, 221, 221);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: -1;
+}
+.heart::before,
+.heart::after{
+    content: '';
+    width: var(--size);
+    aspect-ratio: 1;
+    background-color: rgb(255, 221, 221);
+    position: absolute;
+    border-radius: 50%;
+}
+.heart::before{
+    top: -50%;
+    left: 0;
+}
+.heart::after{
+    top: 0;
+    left: 50%;
+}
+
+h3{
+    color: rgb(243, 112, 160);
+}
+
+button{
+    padding: 1rem 2rem;
+    color: rgb(255, 218, 231);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#yes{
+    background-color: rgb(161, 253, 164);
+    color: #434343;
+    transition: all 0.3s ease;
+}
+
+#yes:hover{
+    background-color: rgb(161, 253, 164);
+    color: #434343;
+    transform: scale(1.1);
+}
+
+#no{
+    background-color: rgb(255, 86, 108);
+    transition: all 0.3s ease;
+}
