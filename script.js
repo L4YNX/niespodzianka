@@ -11,5 +11,5 @@ noButton.addEventListener('mouseover', () => {
 // make #yes button hide every thing on click and show a center message "I knew you would say yes" additionally add a heart emoji and show unknown image
 const yesButton = document.getElementById('yes');
 yesButton.addEventListener('click', () => {
-    document.body.innerHTML = '<h1 style="text-align: center;">Wiedziałem ze powiesz tak! ❤️</h1><img src="Unknown.png" alt="Unknown Image" style="display: block; margin: 0 auto;">';
+    document.body.innerHTML = '<h1 style="text-align: center;">Wiedziałem ze powiesz tak! ❤️</h1><img src="Cute.png" alt="Unknown Image" style="display: block; margin: 0 auto;">';
 });
